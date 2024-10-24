@@ -149,104 +149,54 @@ form>div>button:hover{
 
 a{
     text-decoration: none;
-}
-
-form>div.signupform>h1{
-    margin: 0px;
-    padding: 0px;
-    padding: 20px 0px 10px 10px;
-}
-
-fieldset>div{
-    position: relative;
-    width: 100%;
-    max-width: 200px;
-    margin: 15px 30px 0px 0px;
+    color: aqua;
 }
 
 
-fieldset>div>label{
-    opacity: 0.5;
-    color: black;
-    position: absolute;
-    top: 5px;
-    left: 10px;
-}
-
-input:not(:placeholder-shown)+label{
-    opacity: 0;
-}
-
-fieldset>div>input{
-    opacity: 1;
-    width: 100%;
-    max-width: 220px;
-    height: 30px;
-    padding-left: 10px;
-    font-size: 14px;
-    border-radius: 5px;
-    border: 1px solid white;
-    background-position: 185px -50px;
-    transition: background-position 0.1s ease-in-out;
-}
-
-input:invalid:not(:placeholder-shown):not(:focus){
-    background: url('./images/wrong.svg');
-    background-size: 20px;
-    background-repeat: no-repeat;
-    background-position: 97% 50%;
-    outline: 2px solid red;
-    outline-offset: -2px;
-    background-color:pink;
-}
-
-input:valid:not(:placeholder-shown):not(:focus){
-    background: url('./images/check.svg');
-    background-size: 20px;
-    background-repeat: no-repeat;
-    background-position: 97% 50%;
-    background-color:rgb(228, 255, 228);
-    outline: 2px solid lightgreen;
-    outline-offset: -2px;
-}
-
-
-.signupform{
-    background-color: rgba(0,0,30,0.6);
-    padding: 0px 0px 20px 20px;
-    margin: 0px 20px 0px 20px;
+.form{
+    background-color: rgba(78, 78, 93, 0.6);
+    padding: 50px 50px 50px 50px;
+    margin: auto;
+    margin-bottom: 3rem;
     border-radius: 15px;
-}
-
-
-fieldset{
-    display: flex;
-    flex-direction: row;
-    border-style: none;
-    margin: 0px 10px 10px 10px;
-    padding: 0px;
-}
-
-fieldset>legend{
-    display: none;
-}
-
-footer{
-    width: 100%;
     text-align: center;
-    height: 20px;
-    background-color: rgba(0, 0, 0, 0.3);
-    backdrop-filter: blur(3px);
-    -webkit-backdrop-filter: blur(3px);
-    border-style: none;
-    padding: 0px;
-    font-size: 14px;
-    color: rgba(255,255,255,0.5);
+    font-size: xx-large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: wheat;
+}
+.form:hover{
+    background-color: rgba(53, 19, 225, 0.6);
+    padding: 50px 50px 50px 50px;
+    margin: auto;
+    margin-bottom: 3rem;
+    border-radius: 15px;
+    text-align: center;
+    font-size: xx-large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-footer>a{
-    color: white;
+.website{
+    background-color: rgba(78, 78, 93, 0.6);
+    padding: 50px 50px 50px 50px;
+    margin: auto;
+    border-radius: 15px;
+    text-align: center;
+    font-size: xx-large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+.website:hover{
+    background-color: rgba(53, 19, 225, 0.6);
+    padding: 50px 50px 50px 50px;
+    margin: auto;
+    margin-bottom: 3rem;
+    border-radius: 15px;
+    text-align: center;
+    font-size: xx-large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
 
 .requirements{
     font-size: 14px;
@@ -259,16 +209,11 @@ footer>a{
     transition: height 0.3s ease-in-out,max-height 0.3s ease-in-out;
 }
 
-input:invalid:not(:focus):not(:placeholder-shown)~.requirements{
-    height: 100%;
-    max-height: 200px;
-}
-
  @-webkit-keyframes fade-in {
     0% {
       opacity: 0;
     }
-    100% {
+    100% { 
       opacity: 1;
     }
   }
@@ -301,4 +246,18 @@ input:invalid:not(:focus):not(:placeholder-shown)~.requirements{
     75%{
         
     }
+}
+
+@media (max-width: 700px) {
+    
+}
+  
+@media (max-width: 500px) {
+  html {
+    font-size: 57.5%;
+  }
+
+  .home img {
+    width: 80%;
+  }
 }
