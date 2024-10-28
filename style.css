@@ -1,0 +1,285 @@
+
+@font-face {
+    font-family: 'Product Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/productsans/v5/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
+}
+
+
+body{
+    margin: 0px;
+    font-family: Product Sans;
+    font-size: 18px;
+    color: whitesmoke;
+}
+
+main{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    overflow: auto;
+        /*
+    background-color: black;
+    background: url('./images/background.jpg');
+    background-size: cover;
+    animation: animatebackground 10s ease-in-out infinite;
+    -webkit-animation: animatebackground 10s ease-in-out infinite;*/
+}
+
+.bg{
+    position:fixed;
+    z-index:0;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background: 
+        radial-gradient(#0000FF 5%,#000066 20%,#000000 60%),
+        url('./images/background.jpg');
+    background-size: cover;
+    background-blend-mode:luminosity;
+}
+
+#canvas{
+    width:100%;
+    height:100%;
+    /*mix-blend-mode: hard-light;*/
+    mix-blend-mode:screen;
+    opacity:0.9;
+}
+
+
+.cols{
+    display: flex;
+    height: 100%;
+    min-height: 700px;
+    gap: 30px;
+    flex-direction: row;
+}
+
+.logocol{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 85%;
+    min-width: 350px;
+    transition: 0.5s;
+	-webkit-animation: fade-in 0.3s linear both;
+	animation: fade-in 0.5s linear both;
+}
+
+div>span{
+    margin: 0px;
+    padding: 0px;
+}
+
+.logocol>div,div>span{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 7vw;
+    font-weight: 900;
+    line-height:0.7em;
+    letter-spacing: -10px;
+    text-shadow: 0px 0px 20px black;
+}
+
+img.bg{
+    width: 120%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(4px);
+}
+
+.signupcol{
+    margin: 30px 30px 20px 0px;
+    border-radius: 30px;
+    width: 60%;
+    min-width: 450px;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(8px);
+    box-shadow: 0px 0px 10px 8px rgba(0, 0, 0,0.5);
+	-webkit-animation: fade-in 0.3s linear both;
+	animation: fade-in 0.5s linear both;
+}
+
+#registerbutton{
+    position:relative;
+    margin: 20px 0px 0px 50px;
+    height: 40px;
+    width: 212px;
+}
+
+form>div>button{
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    font-weight: bolder;
+    font-size: 18px;
+    background-color: rgb(249, 208, 3);
+    border: 0px solid white;
+    border-radius: 5px;
+    transition: height 0.1s linear,top 0.1s linear;
+}
+
+form>div>button:hover{
+    top:-10%;
+    height: 130%;
+    cursor: pointer;
+}
+
+.signupcol>h1{
+    margin: 0px;
+    padding: 50px;
+    font-weight: lighter;
+    font-size: 24px;
+}
+
+.login{
+    padding: 20px 0px 10px 50px;
+}
+
+a{
+    text-decoration: none;
+    color: aqua;
+}
+
+
+.form{
+    background-color: rgba(78, 78, 93, 0.6);
+    padding: 50px 50px 50px 50px;
+    margin: auto;
+    margin-bottom: 3rem;
+    border-radius: 15px;
+    text-align: center;
+    font-size: xx-large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: wheat;
+}
+.form:hover{
+    background-color: rgba(53, 19, 225, 0.6);
+    padding: 50px 50px 50px 50px;
+    margin: auto;
+    margin-bottom: 3rem;
+    border-radius: 15px;
+    text-align: center;
+    font-size: xx-large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.website{
+    background-color: rgba(78, 78, 93, 0.6);
+    padding: 50px 50px 50px 50px;
+    margin: auto;
+    border-radius: 15px;
+    text-align: center;
+    font-size: xx-large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.website:hover{
+    background-color: rgba(53, 19, 225, 0.6);
+    padding: 50px 50px 50px 50px;
+    margin: auto;
+    margin-bottom: 3rem;
+    border-radius: 15px;
+    text-align: center;
+    font-size: xx-large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+
+.requirements{
+    font-size: 14px;
+    max-height: 0px;
+    height: 0%;
+    transition: 0.28s;
+    overflow: hidden;
+    color: red;
+    font-style: italic;
+    transition: height 0.3s ease-in-out,max-height 0.3s ease-in-out;
+}
+
+ @-webkit-keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% { 
+      opacity: 1;
+    }
+  }
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+@keyframes animatebackground2 
+{
+ from {background-position: 4320px 0;}
+ to {background-position: 0 0;}
+}
+
+@keyframes animatebackground 
+{
+    0%,100%{
+        transform: translate(0,0);
+    }
+    25%{
+        transform: translate(50%,50%);
+    }
+    50%{
+        
+    }
+    75%{
+        
+    }
+}
+
+@media (max-width: 700px) {
+    main{
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: row;
+        z-index: 1;
+        overflow: auto;
+            /*
+        background-color: black;
+        background: url('./images/background.jpg');
+        background-size: cover;
+        animation: animatebackground 10s ease-in-out infinite;
+        -webkit-animation: animatebackground 10s ease-in-out infinite;*/
+    }
+}
+  
+@media (max-width: 500px) {
+    main{
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: row;
+        z-index: 1;
+        overflow: auto;
+            /*
+        background-color: black;
+        background: url('./images/background.jpg');
+        background-size: cover;
+        animation: animatebackground 10s ease-in-out infinite;
+        -webkit-animation: animatebackground 10s ease-in-out infinite;*/
+    }
+}

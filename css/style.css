@@ -114,6 +114,10 @@ section {
 /*=======02) Header Section=======*/
 header .navbar-brand img{
 	width: 10rem;
+	height: 5rem;
+
+	border-top-right-radius: 30%;
+	border-bottom-left-radius: 30%;
 	
 }
 header .navbar-brand span{
